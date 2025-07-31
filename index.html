@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO Meta Tags -->
+    <title>MedicalPrem - Professional & Responsive Hospital Website</title>
+    <meta name="description" content="MedicalPrem is a fully responsive and modern hospital website built with HTML5, Tailwind CSS, and AOS animation. Get expert care and medical services today.">
+    <meta name="keywords" content="Medical, Hospital, Doctors, Health Care, Medical Services, MedicalPrem, Tailwind CSS Website">
+     
+    <link rel="stylesheet" href="dist/styles.css">
+    <!-- animiton aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden bg-[#1f2e5a]">
+<!-- Navbar section start-->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#1f2e5a]/90 backdrop-blur text-white shadow-md transition-all duration-300">
+      
+      <div class="max-w-7xl mx-auto py-4 px-6 sm:px-8 md:px-10 lg:px-14 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-xl font-bold transition-transform duration-300 hover:scale-105">
+          MedicalPrem
+        </div>
+
+        <!-- Menu for Desktop -->
+        <ul class="hidden md:flex space-x-6 items-center font-medium">
+          <li><a href="#home" class="hover:text-orange-400 transition-all duration-200">Home</a></li>
+          <li><a href="#experts" class="hover:text-orange-400 transition-all duration-200">Experts</a></li>
+           <li><a href="#doctors" class="hover:text-orange-400 transition-all duration-200">Doctors</a></li>
+          <li><a href="#contact" class="hover:text-orange-400 transition-all duration-200">Contact</a></li>
+          <li><a href="#" class="hover:text-gray-300 transition-all duration-200">Login</a></li>
+          <li>
+            <a href="#" class="ml-4 px-4 py-2 bg-orange-500 text-white rounded-md shadow-lg hover:bg-orange-600 transition-transform transform hover:scale-105 duration-300">
+              JOIN US →
+            </a>
+          </li>
+        </ul>
+
+        <!-- Mobile menu toggle -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="focus:outline-none hover:scale-110 transition-transform duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden px-6 sm:px-8 md:px-10 lg:px-14 pb-4 md:hidden space-y-3 font-medium">
+        <a href="#home" class="block hover:text-orange-400 transition-all duration-200">Home</a>
+        <a href="#experts" class="block hover:text-orange-400 transition-all duration-200">Experts</a>
+        <a href="#doctors" class="block hover:text-orange-400 transition-all duration-200">Doctors</a>
+        <a href="#contact" class="block hover:text-orange-400 transition-all duration-200">Contact</a>
+        <a href="#" class="block hover:text-gray-300 transition-all duration-200">Login</a>
+        <a href="#" class="inline-block px-4 py-2 bg-orange-500 text-white rounded-md shadow hover:bg-orange-600 transition-all duration-300 transform hover:scale-105">
+          JOIN US →
+        </a>
+      </div>
+    </nav>
+<!-- Navbar section end-->
+
+<!-- Hero Section Start-->
+<section id="home" class="bg-[#1f2e5a] text-white pt-20">
+  <div class="max-w-[1280px] mx-auto py-12 px-6 sm:px-8 md:px-10 lg:px-14 flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-8">
+    
+    <!-- Left Content -->
+    <div class="md:w-1/2 text-center md:text-left space-y-4 animate-fade-slide-right" data-aos="fade-right">
+      <p class="text-sm font-semibold text-orange-400">Welcome to MedicalPrem</p>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+        Your Trusted Partner <br />
+        in Healthcare
+      </h1>
+      <p class="text-gray-300 text-base sm:text-lg max-w-md mx-auto md:mx-0">
+        We provide compassionate care, advanced technology, and a team of dedicated experts to ensure your health and wellbeing.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
+        <a href="#" class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-md shadow-md hover:bg-orange-600 transition duration-300">
+          Book Appointment
+        </a>
+        <a href="#" class="px-6 py-3 border border-orange-400 text-orange-400 font-semibold rounded-md hover:bg-orange-500 hover:text-white transition duration-300">
+          Explore Services
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="md:w-1/2 flex justify-center animate-fade-slide-left" data-aos="fade-left">
+      <img
+        src="images/hero.png"
+        alt="Doctor"
+        class="w-[320px] sm:w-[400px] md:w-[460px] 
+        rounded-xl shadow-2xl drop-shadow-lg
+        transition duration-500 ease-in-out 
+        hover:scale-105 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)]" />
+    </div>
+
+  </div>
+</section>
+<!-- Hero Section End -->
+
+<!--  Stats Section Start -->
+<section class="bg-[#1f2e5a] text-white">
+  <div class="max-w-[1280px] mx-auto py-12 px-6 sm:px-8 md:px-10 lg:px-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    
+    <!-- Item 1 -->
+    <div data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-3xl sm:text-4xl font-extrabold text-orange-500">15K+</h3>
+      <p class="text-sm sm:text-base text-gray-300 mt-2">Patients Cared</p>
+    </div>
+
+    <!-- Item 2 -->
+    <div data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-3xl sm:text-4xl font-extrabold text-orange-500">150K+</h3>
+      <p class="text-sm sm:text-base text-gray-300 mt-2">Monthly Website Visitors</p>
+    </div>
+
+    <!-- Item 3 -->
+    <div data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-3xl sm:text-4xl font-extrabold text-orange-500">15+</h3>
+      <p class="text-sm sm:text-base text-gray-300 mt-2">Countries Served</p>
+    </div>
+
+    <!-- Item 4 -->
+    <div data-aos="fade-up" data-aos-delay="400">
+      <h3 class="text-3xl sm:text-4xl font-extrabold text-orange-500">100+</h3>
+      <p class="text-sm sm:text-base text-gray-300 mt-2">Trusted Medical Partners</p>
+    </div>
+
+  </div>
+</section>
+<!--  Stats Section End -->
+
+<!-- Video Info Section Start -->
+<section class="bg-[#1f2e5a] text-white">
+  <div class="max-w-[1280px] mx-auto py-12 md:py-20 px-6 sm:px-8 md:px-10 lg:px-14 flex flex-col md:flex-row items-center justify-between gap-10">
+    
+    <!-- Left: Image with play button already inside -->
+    <div class="md:w-1/2" data-aos="fade-right">
+      <img
+        src="images/Image-video.png"
+        alt="Why Patients Trust Us"
+        class="rounded-xl w-full object-cover shadow-xl"
+      />
+    </div>
+
+    <!-- Right: Text Content -->
+    <div class="md:w-1/2 text-center md:text-left space-y-4" data-aos="fade-left">
+      <div class="w-12 h-[2px] bg-orange-500 mb-2 mx-auto md:mx-0"></div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">Why Patients Trust Us</h2>
+      <p class="text-gray-300 text-base sm:text-lg max-w-md mx-auto md:mx-0">
+        Discover how our doctors and staff deliver excellence in every step of your healthcare journey. Your health is our mission.
+      </p>
+      <a href="#"
+         class="inline-flex items-center text-orange-400 font-semibold hover:text-orange-300 transition group">
+        Learn More
+        <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor"
+             stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- Video Info Section End -->
+
+<!-- Meet Our Experts Section Start -->
+<section id="experts" class="bg-[#1f2e5a] text-white">
+  <div class="max-w-[1280px] mx-auto py-12 md:py-20 px-6 sm:px-8 md:px-10 lg:px-14">
+
+    <!-- Section Header -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <p class="text-sm text-orange-400 font-semibold">Practice Advice</p>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">Meet Our Experts</h2>
+      <p class="text-gray-300 max-w-2xl mx-auto mt-4">
+        Our expert team brings years of experience and knowledge to provide you with the highest quality medical care.
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Card 1 -->
+      <div tabindex="0"
+        class="group bg-white text-center p-6 rounded-xl shadow-md focus:outline-none 
+               hover:shadow-2xl hover:-translate-y-2 focus:shadow-2xl focus:-translate-y-2 
+               transition-all duration-300 ease-in-out"
+        data-aos="fade-up" data-aos-delay="100">
+        <img src="images/icon-1.png" alt="Quick examination"
+          class="mx-auto w-14 h-14 mb-4 transition-transform group-hover:scale-110 group-focus:scale-110" />
+        <h3 class="text-lg font-semibold text-[#1f2e5a]">Quick Examination</h3>
+        <div class="w-8 h-[2px] bg-red-300 mx-auto my-2"></div>
+        <p class="text-gray-500 text-sm">
+          Get rapid and accurate diagnostics from our skilled medical team.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div tabindex="0"
+        class="group bg-white text-center p-6 rounded-xl shadow-md focus:outline-none 
+               hover:shadow-2xl hover:-translate-y-2 focus:shadow-2xl focus:-translate-y-2 
+               transition-all duration-300 ease-in-out"
+        data-aos="fade-up" data-aos-delay="200">
+        <img src="images/icon-2.png" alt="Health Queries"
+          class="mx-auto w-14 h-14 mb-4 transition-transform group-hover:scale-110 group-focus:scale-110" />
+        <h3 class="text-lg font-semibold text-[#1f2e5a]">Health Queries</h3>
+        <div class="w-8 h-[2px] bg-red-300 mx-auto my-2"></div>
+        <p class="text-gray-500 text-sm">
+          Talk to our professionals anytime about your health concerns.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div tabindex="0"
+        class="group bg-white text-center p-6 rounded-xl shadow-md focus:outline-none 
+               hover:shadow-2xl hover:-translate-y-2 focus:shadow-2xl focus:-translate-y-2 
+               transition-all duration-300 ease-in-out"
+        data-aos="fade-up" data-aos-delay="300">
+        <img src="images/icon-3.png" alt="Cancer Care"
+          class="mx-auto w-14 h-14 mb-4 transition-transform group-hover:scale-110 group-focus:scale-110" />
+        <h3 class="text-lg font-semibold text-[#1f2e5a]">Cancer Care</h3>
+        <div class="w-8 h-[2px] bg-red-300 mx-auto my-2"></div>
+        <p class="text-gray-500 text-sm">
+          Advanced treatments with personalized care and modern facilities.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div tabindex="0"
+        class="group bg-white text-center p-6 rounded-xl shadow-md focus:outline-none 
+               hover:shadow-2xl hover:-translate-y-2 focus:shadow-2xl focus:-translate-y-2 
+               transition-all duration-300 ease-in-out"
+        data-aos="fade-up" data-aos-delay="400">
+        <img src="images/icon-4.png" alt="Painless procedures"
+          class="mx-auto w-14 h-14 mb-4 transition-transform group-hover:scale-110 group-focus:scale-110" />
+        <h3 class="text-lg font-semibold text-[#1f2e5a]">Painless Procedures</h3>
+        <div class="w-8 h-[2px] bg-red-300 mx-auto my-2"></div>
+        <p class="text-gray-500 text-sm">
+          We ensure gentle and comfortable procedures with expert precision.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Meet Our Experts Section End -->
+
+<!-- Our Doctors Specialize in You Section Start -->
+<section class="bg-[#1f2e5a] text-white">
+  <div class="max-w-[1280px] mx-auto py-12 md:py-20 px-6 sm:px-8 md:px-10 lg:px-14">
+
+    <!-- Section Header -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <p class="text-sm text-orange-400 font-semibold">Services</p>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">Our Doctors Specialize in You</h2>
+      <p class="text-gray-300 max-w-2xl mx-auto mt-4">
+        Explore personalized healthcare services crafted to meet your unique needs — delivered with expert care and compassion.
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Card 1 -->
+      <div tabindex="0" class="group bg-white rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-orange-400
+           hover:shadow-2xl hover:-translate-y-2 focus:shadow-2xl focus:-translate-y-2 transition-all duration-300 ease-in-out overflow-hidden"
+        data-aos="fade-up" data-aos-delay="100">
+        <div class="relative">
+          <img src="images/image-1.png" alt="Emergency Case"
+            class="w-full h-[250px] object-cover transition-transform duration-300 group-hover:scale-105 group-focus:scale-105" />
+          <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">Sale</span>
+          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-3 px-4 py-2">
+            <img src="images/love.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="Like" />
+            <img src="images/basket.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="Cart" />
+            <img src="images/view.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="View" />
+          </div>
+        </div>
+        <div class="p-5 text-[#1f2e5a] text-sm">
+          <p class="text-orange-500 font-semibold mb-1">Emergency Care <span class="ml-2 bg-yellow-400 px-2 py-0.5 text-xs rounded-full text-white">★ 4.8</span></p>
+          <h3 class="text-base font-bold">24/7 Urgent Medical Response</h3>
+          <p class="text-gray-500 mt-1">Immediate care from our skilled team using advanced life-saving equipment — anytime, day or night.</p>
+          <div class="flex justify-between items-center text-xs text-gray-500 mt-4">
+            <span>📥 32 Sales</span>
+            <span><del>$20.00</del> <span class="text-blue-500 font-bold">$9.99</span></span>
+          </div>
+          <a href="#" class="inline-flex items-center mt-4 text-orange-500 font-semibold hover:text-orange-400 transition group">
+            Learn More
+            <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div tabindex="0" class="group bg-white rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-orange-400
+           hover:shadow-2xl hover:-translate-y-2 focus:shadow-2xl focus:-translate-y-2 transition-all duration-300 ease-in-out overflow-hidden"
+        data-aos="fade-up" data-aos-delay="200">
+        <div class="relative">
+          <img src="images/image-2.png" alt="Health Queries"
+            class="w-full h-[250px] object-cover transition-transform duration-300 group-hover:scale-105 group-focus:scale-105" />
+          <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">Sale</span>
+          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-3 px-4 py-2">
+            <img src="images/love.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="Like" />
+            <img src="images/basket.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="Cart" />
+            <img src="images/view.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="View" />
+          </div>
+        </div>
+        <div class="p-5 text-[#1f2e5a] text-sm">
+          <p class="text-orange-500 font-semibold mb-1">Health Queries <span class="ml-2 bg-yellow-400 px-2 py-0.5 text-xs rounded-full text-white">★ 4.6</span></p>
+          <h3 class="text-base font-bold">Talk to Experts Anytime</h3>
+          <p class="text-gray-500 mt-1">Get trusted answers from certified doctors — from simple symptoms to complex health conditions.</p>
+          <div class="flex justify-between items-center text-xs text-gray-500 mt-4">
+            <span>📥 24 Sales</span>
+            <span><del>$15.00</del> <span class="text-blue-500 font-bold">$7.50</span></span>
+          </div>
+          <a href="#" class="inline-flex items-center mt-4 text-orange-500 font-semibold hover:text-orange-400 transition group">
+            Learn More
+            <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div tabindex="0" class="group bg-white rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-orange-400
+           hover:shadow-2xl hover:-translate-y-2 focus:shadow-2xl focus:-translate-y-2 transition-all duration-300 ease-in-out overflow-hidden"
+        data-aos="fade-up" data-aos-delay="300">
+        <div class="relative">
+          <img src="images/image-3.png" alt="Cancer Care"
+            class="w-full h-[250px] object-cover transition-transform duration-300 group-hover:scale-105 group-focus:scale-105" />
+          <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">Sale</span>
+          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-3 px-4 py-2">
+            <img src="images/love.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="Like" />
+            <img src="images/basket.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="Cart" />
+            <img src="images/view.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="View" />
+          </div>
+        </div>
+        <div class="p-5 text-[#1f2e5a] text-sm">
+          <p class="text-orange-500 font-semibold mb-1">Cancer Care <span class="ml-2 bg-yellow-400 px-2 py-0.5 text-xs rounded-full text-white">★ 4.9</span></p>
+          <h3 class="text-base font-bold">Compassionate Oncology Support</h3>
+          <p class="text-gray-500 mt-1">Personalized cancer treatment plans with emotional support and the latest medical technology.</p>
+          <div class="flex justify-between items-center text-xs text-gray-500 mt-4">
+            <span>📥 18 Sales</span>
+            <span><del>$30.00</del> <span class="text-blue-500 font-bold">$14.99</span></span>
+          </div>
+          <a href="#" class="inline-flex items-center mt-4 text-orange-500 font-semibold hover:text-orange-400 transition group">
+            Learn More
+            <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div tabindex="0" class="group bg-white rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-orange-400
+           hover:shadow-2xl hover:-translate-y-2 focus:shadow-2xl focus:-translate-y-2 transition-all duration-300 ease-in-out overflow-hidden"
+        data-aos="fade-up" data-aos-delay="400">
+        <div class="relative">
+          <img src="images/image-4.png" alt="Quick Examination"
+            class="w-full h-[250px] object-cover transition-transform duration-300 group-hover:scale-105 group-focus:scale-105" />
+          <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded">Sale</span>
+          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-3 px-4 py-2">
+            <img src="images/love.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="Like" />
+            <img src="images/basket.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="Cart" />
+            <img src="images/view.png" class="w-8 h-8 hover:scale-110 transition duration-300" alt="View" />
+          </div>
+        </div>
+        <div class="p-5 text-[#1f2e5a] text-sm">
+          <p class="text-orange-500 font-semibold mb-1">Quick Examination <span class="ml-2 bg-yellow-400 px-2 py-0.5 text-xs rounded-full text-white">★ 4.7</span></p>
+          <h3 class="text-base font-bold">Fast & Accurate Diagnostics</h3>
+          <p class="text-gray-500 mt-1">Get your health checked swiftly with reliable diagnostic tools and experienced medical professionals.</p>
+          <div class="flex justify-between items-center text-xs text-gray-500 mt-4">
+            <span>📥 27 Sales</span>
+            <span><del>$18.00</del> <span class="text-blue-500 font-bold">$8.49</span></span>
+          </div>
+          <a href="#" class="inline-flex items-center mt-4 text-orange-500 font-semibold hover:text-orange-400 transition group">
+            Learn More
+            <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Our Doctors Specialize in You Section End -->
+
+<!--  The Best Reference Section Start -->
+<section class="bg-[#1f2e5a] text-white">
+  <div class="max-w-[1280px] mx-auto py-12 md:py-20 px-6 sm:px-8 md:px-10 lg:px-14 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+
+    <!-- Left: Image -->
+    <div class="md:w-1/2 flex justify-center" data-aos="fade-right">
+      <img 
+        src="images/best-reference.png" 
+        alt="Doctor Reference" 
+        class="w-[320px] sm:w-[400px] md:w-[460px] h-96 rounded-md transition duration-500 ease-in-out 
+             hover:scale-105 focus:scale-105 
+             shadow-[0_12px_18px_-4px_rgba(0,0,0,0.3)] focus:shadow-[0_12px_18px_-4px_rgba(0,0,0,0.4)] outline-none" 
+        tabindex="0" />
+    </div>
+
+    <!-- Right: Text Content -->
+    <div class="md:w-1/2 text-center md:text-left space-y-4" data-aos="fade-left">
+      <div class="w-12 h-1 bg-orange-400 mb-2 mx-auto md:mx-0"></div>
+      <h2 class="text-3xl sm:text-4xl font-bold leading-tight">The Best <br /> Reference</h2>
+      <p class="text-gray-300 text-base sm:text-lg max-w-md mx-auto md:mx-0">
+        Trusted by thousands of patients for our commitment, compassion, and results. Your health is our greatest success story.
+      </p>
+      <a href="#" class="inline-flex items-center gap-1 text-orange-400 font-semibold hover:text-orange-300 transition mt-2">
+        Learn More
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+<!--  The Best Reference Section End -->
+
+<!-- Testimonials Section Start -->
+<section class="bg-[#1f2e5a] text-white">
+  <div class="max-w-[1280px] mx-auto py-12 md:py-20 px-6 sm:px-8 md:px-10 lg:px-14">
+    
+    <!-- Heading -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <p class="text-orange-400 font-semibold">Testimonials</p>
+      <h2 class="text-3xl sm:text-4xl font-bold">What Our Patients Say</h2>
+      <p class="text-gray-300 max-w-2xl mx-auto mt-2">
+        Discover how our care has made a difference in the lives of patients and families we serve.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-[1.03] hover:shadow-xl focus-within:ring-2 focus-within:ring-orange-400" tabindex="0" data-aos="fade-right">
+        <div class="flex flex-col items-center text-center space-y-4">
+          <img src="images/testimonial1.png" alt="Client 1" class="w-20 h-20 rounded-full border-4 border-orange-400 shadow-md" />
+          <p class="text-sm leading-relaxed text-gray-700">
+            “I received outstanding care at MedicalPrem. The staff was professional, kind, and efficient. I felt safe and supported throughout.”
+          </p>
+          <div class="text-yellow-400 flex gap-1">
+            ⭐⭐⭐⭐⭐
+          </div>
+          <div>
+            <p class="font-bold">Regina Miles</p>
+            <p class="text-sm text-gray-500">Patient</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white text-gray-800 p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-[1.03] hover:shadow-xl focus-within:ring-2 focus-within:ring-orange-400" tabindex="0" data-aos="fade-left">
+        <div class="flex flex-col items-center text-center space-y-4">
+          <img src="images/testimonial2.png" alt="Client 2" class="w-20 h-20 rounded-full border-4 border-orange-400 shadow-md" />
+          <p class="text-sm leading-relaxed text-gray-700">
+            “I was amazed by the clarity of information and the warmth of the staff. Everything was seamless.”
+          </p>
+          <div class="text-yellow-400 flex gap-1">
+            ⭐⭐⭐⭐⭐
+          </div>
+          <div>
+            <p class="font-bold">Jordan Fields</p>
+            <p class="text-sm text-gray-500">Patient</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Testimonials Section End -->
+
+<!-- Our Team Section Start -->
+<section id="doctors" class="bg-[#1f2e5a] text-white">
+  <div class="max-w-[1280px] mx-auto py-12 md:py-20 px-6 sm:px-8 md:px-10 lg:px-14">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <p class="text-orange-400 font-semibold uppercase">Our Medical Team</p>
+      <h2 class="text-3xl sm:text-4xl font-bold">Meet Our Dedicated Doctors</h2>
+      <p class="text-gray-300 max-w-xl mx-auto mt-2">
+        Our team of skilled professionals is committed to delivering expert care with compassion and precision.
+      </p>
+    </div>
+
+    <!-- Team Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Dr. Julia Jameson -->
+      <div class="bg-white text-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 focus-within:shadow-2xl focus-within:-translate-y-2 transition duration-300 ease-in-out text-center" tabindex="0" data-aos="fade-up">
+        <img src="images/team1.png" alt="Dr. Julia Jameson" class="w-full h-72 object-cover object-top" />
+        <div class="p-5">
+          <h3 class="text-lg font-bold">Dr. Julia Jameson</h3>
+          <p class="text-sm text-gray-500">Cardiologist</p>
+          <div class="mt-4 flex justify-center gap-4 text-orange-500 text-lg">
+            <a href="#"><i class="fab fa-facebook-f hover:text-orange-600"></i></a>
+            <a href="#"><i class="fab fa-instagram hover:text-orange-600"></i></a>
+            <a href="#"><i class="fab fa-twitter hover:text-orange-600"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dr. Andrew Blake -->
+      <div class="bg-white text-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 focus-within:shadow-2xl focus-within:-translate-y-2 transition duration-300 ease-in-out text-center" tabindex="0" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/team2.png" alt="Dr. Andrew Blake" class="w-full h-72 object-cover object-top" />
+        <div class="p-5">
+          <h3 class="text-lg font-bold">Dr. Andrew Blake</h3>
+          <p class="text-sm text-gray-500">Pediatrician</p>
+          <div class="mt-4 flex justify-center gap-4 text-orange-500 text-lg">
+            <a href="#"><i class="fab fa-facebook-f hover:text-orange-600"></i></a>
+            <a href="#"><i class="fab fa-instagram hover:text-orange-600"></i></a>
+            <a href="#"><i class="fab fa-twitter hover:text-orange-600"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dr. Stephanie Fox -->
+      <div class="bg-white text-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 focus-within:shadow-2xl focus-within:-translate-y-2 transition duration-300 ease-in-out text-center" tabindex="0" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/team3.png" alt="Dr. Stephanie Fox" class="w-full h-72 object-cover object-top" />
+        <div class="p-5">
+          <h3 class="text-lg font-bold">Dr. Stephanie Fox</h3>
+          <p class="text-sm text-gray-500">Oncologist</p>
+          <div class="mt-4 flex justify-center gap-4 text-orange-500 text-lg">
+            <a href="#"><i class="fab fa-facebook-f hover:text-orange-600"></i></a>
+            <a href="#"><i class="fab fa-instagram hover:text-orange-600"></i></a>
+            <a href="#"><i class="fab fa-twitter hover:text-orange-600"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dr. Charles Evans -->
+      <div class="bg-white text-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 focus-within:shadow-2xl focus-within:-translate-y-2 transition duration-300 ease-in-out text-center" tabindex="0" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/team4.png" alt="Dr. Charles Evans" class="w-full h-72 object-cover object-top" />
+        <div class="p-5">
+          <h3 class="text-lg font-bold">Dr. Charles Evans</h3>
+          <p class="text-sm text-gray-500">Surgeon</p>
+          <div class="mt-4 flex justify-center gap-4 text-orange-500 text-lg">
+            <a href="#"><i class="fab fa-facebook-f hover:text-orange-600"></i></a>
+            <a href="#"><i class="fab fa-instagram hover:text-orange-600"></i></a>
+            <a href="#"><i class="fab fa-twitter hover:text-orange-600"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Our Team Section End -->
+
+<!-- Join Us / Newsletter Section Start -->
+<section class="bg-[#1f2e5a] text-white py-16 px-6 sm:px-8 md:px-10 lg:px-14" data-aos="fade-right">
+  <div class="max-w-2xl mx-auto text-center">
+
+    <!-- Section Label -->
+    <p class="text-orange-400 font-semibold uppercase mb-2" data-aos="fade-left" data-aos-delay="100">
+      Join Us / Newsletter
+    </p>
+
+    <!-- Section Title -->
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4" data-aos="fade-right" data-aos-delay="200">
+      Join Our Newsletter
+    </h2>
+
+    <!-- Description -->
+    <p class="text-gray-300 mb-8" data-aos="fade-left" data-aos-delay="300">
+      Stay updated with the latest health tips, news, and exclusive offers from our medical team.
+    </p>
+
+    <!-- Newsletter Form -->
+    <form class="flex flex-col sm:flex-row items-center justify-center gap-4" data-aos="fade-right" data-aos-delay="400">
+
+      <!-- Input Field -->
+      <input
+        type="email"
+        placeholder="📧 Your Email"
+        class="w-full sm:w-auto flex-1 px-5 py-3 rounded-lg bg-white text-gray-800 placeholder:text-gray-500 transition focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-offset-2"
+        required
+      />
+
+      <!-- Subscribe Button -->
+      <button
+        type="submit"
+        class="bg-orange-500 hover:bg-orange-600 focus:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 transform hover:scale-105 focus:scale-105 shadow-md hover:shadow-lg focus:shadow-lg"
+      >
+        Subscribe
+      </button>
+
+    </form>
+  </div>
+</section>
+<!-- Join Us / Newsletter Section End -->
+
+<!-- Footer Section Start -->
+<footer  id="contact" class="bg-[#fafbff] text-black py-12 px-6 sm:px-8 md:px-10 lg:px-14">
+  <div class="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+    <!-- About Us -->
+    <div class="group">
+      <h4 class="text-lg font-bold mb-3 text-orange-400 transition duration-300 group-hover:text-orange-500 focus-within:text-orange-500">
+        About Us
+      </h4>
+      <p class="text-black transition duration-300 group-hover:text-gray-800 focus-within:text-gray-800 cursor-pointer">
+        Learn about our vision, values, and mission to improve global health.
+      </p>
+    </div>
+
+    <!-- Career -->
+    <div class="group">
+      <h4 class="text-lg font-bold mb-3 text-orange-400 transition duration-300 group-hover:text-orange-500 focus-within:text-orange-500">
+        Career
+      </h4>
+      <p class="text-black transition duration-300 group-hover:text-gray-800 focus-within:text-gray-800 cursor-pointer">
+        Join our expert team and make a difference in people’s lives.
+      </p>
+    </div>
+
+    <!-- Blog -->
+    <div class="group">
+      <h4 class="text-lg font-bold mb-3 text-orange-400 transition duration-300 group-hover:text-orange-500 focus-within:text-orange-500">
+        Blog
+      </h4>
+      <p class="text-black transition duration-300 group-hover:text-gray-800 focus-within:text-gray-800 cursor-pointer">
+        Read tips and insights from our healthcare professionals.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="group">
+      <h4 class="text-lg font-bold mb-3 text-orange-400 transition duration-300 group-hover:text-orange-500 focus-within:text-orange-500">
+        Contact
+      </h4>
+      <p class="text-black transition duration-300 group-hover:text-gray-800 focus-within:text-gray-800 cursor-pointer">
+        Have questions? We're here to help, 24/7.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="mt-12 text-center text-sm text-gray-700">
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-6 mb-4 text-lg text-orange-500">
+      <a href="#" class="hover:text-orange-600 transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-orange-600 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-orange-600 transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-orange-600 transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    &copy; 2025 Medical Premier. MHRX All rights reserved.
+  </div>
+</footer>
+<!-- Footer Section End -->
+
+
+<!-- Linking external JS file -->
+<script src="scripts.js"></script>
+
+</body>
+</html>
