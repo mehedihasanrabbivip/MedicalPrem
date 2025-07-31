@@ -8,7 +8,7 @@ MedicalPrem is a fully responsive and modern hospital-themed website built using
 
 ## 🖥️ Live Preview
 
-**Live Site:** [https://vercel.com/mhrxs-projects/medical-prem](https://vercel.com/mhrxs-projects/medical-prem)
+**Live Site:** [https://medical-prem.vercel.app/](https://medical-prem.vercel.app/)
 
 ## 📸 Screenshot
 
